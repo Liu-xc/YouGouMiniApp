@@ -95,5 +95,19 @@ Page({
     this.setData({
       tabs
     })
+  },
+
+  // 下拉刷新
+  onPullDownRefresh(){
+    // 重置数组
+    this.setData({
+      goodsList: []
+    })
+    // 重置页码
+    this.QueryParams.pagenum = 1
+    // 发送请求
+    this.getGoodsList()
+    // 手动关闭等待效果
+    wx.stopPullDownRefresh()
   }
 })

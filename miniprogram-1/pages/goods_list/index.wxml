@@ -3,10 +3,12 @@
 <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
   <block wx:if="{{tabs[0].isActive}}">
     <view class="first_tab">
-      <navigator class="goods_item" wx:for="{{goodsList}}" wx:key="goods_id" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      <navigator class="goods_item" wx:for="{{goodsList}}" url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+        wx:key="goods_id">
         <!-- 左侧图片容器 -->
         <view class="goods_img_wrap">
-          <image class="" src="{{item.goods_small_logo?item.goods_small_logo:'../../icons/图片.png'}}" mode="widthFix"></image>
+          <image class="" src="{{item.goods_small_logo?item.goods_small_logo:'../../icons/图片.png'}}" mode="widthFix">
+          </image>
         </view>
         <!-- 右侧商品容器 -->
         <view class="goods_info_wrap">
