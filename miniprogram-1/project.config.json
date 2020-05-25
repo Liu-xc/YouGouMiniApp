@@ -90,6 +90,20 @@
 					"id": -1,
 					"name": "支付",
 					"pathName": "pages/pay/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录界面",
+					"pathName": "pages/login/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/user/index",
 					"scene": null
 				}
 			]
