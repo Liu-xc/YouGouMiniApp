@@ -6,7 +6,7 @@
   <view class="index_swiper">
     <swiper autoplay="{{true}}" indicator-dots="{{true}}" circular="{{true}}">
       <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
-        <navigator hover-class="navigator-hover" open-type="navigate">
+        <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" hover-class="navigator-hover" open-type="navigate">
           <image src='{{item.image_src}}' mode="widthFix" alt="" />
         </navigator>
       </swiper-item>

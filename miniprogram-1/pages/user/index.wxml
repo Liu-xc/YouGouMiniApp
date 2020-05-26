@@ -17,8 +17,8 @@
         <view class="his_num">0</view>
         <view class="his_name">收藏的店铺</view>
       </navigator>
-      <navigator>
-        <view class="his_num">0</view>
+      <navigator url="/pages/collect/index">
+        <view class="his_num">{{collectNum}}</view>
         <view class="his_name">收藏的商品</view>
       </navigator>
       <navigator>
@@ -33,15 +33,15 @@
     <view class="orders_wrap">
       <view class="orders_title">我的订单</view>
       <view class="orders_content">
-        <navigator>
+        <navigator url="/pages/order/index?type=1">
           <view class="iconfont  icon-icon-test1"></view>
           <view class="order_name">全部订单</view>
         </navigator>
-        <navigator>
+        <navigator url="/pages/order/index?type=2">
           <view class="iconfont    icon-icon-test"></view>
           <view class="order_name">待付款</view>
         </navigator>
-        <navigator>
+        <navigator url="/pages/order/index?type=3">
           <view class="iconfont    icon-yunshuzhongwuliu-xianxing"></view>
           <view class="order_name">待收货</view>
         </navigator>
@@ -57,9 +57,9 @@
         <text>联系客服</text>
         <text>400-618-4000</text>
       </view>
-      <view class="app_info_item">
+      <naviagtor url="/pages/feedback/index" class="app_info_item">
         <text>意见反馈</text>
-      </view>
+      </naviagtor>
       <view class="app_info_item">
         <text>关于我们</text>
       </view>
